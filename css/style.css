@@ -1,0 +1,154 @@
+/* google fonts linking here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+Position
+/* ************************
+****    Global CSS     ****
+***************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Open Sans", sans-serif;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* header section part */
+h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+
+/* social-media section part start */
+
+.social-media{
+    text-align: center;
+}
+.social-media ul li{
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid #ffb7c5;
+    background-color: #ffb7c5;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 0px 25px;
+    transition: 0.5s;
+}
+.social-media ul li i{
+    color: black;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+/* social-media section part end */
+
+
+
+
+/* BD flag css start */
+
+.bd-flag-section{
+    width: 100%;
+    height: 70vh;
+    background-color: skyblue;
+}
+
+.container{
+    width: 1140px;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green{
+    position: relative;
+    width: 700px;
+    height: 350px;
+    background-color: green;  
+}
+.green .red{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: red;
+    border-radius: 100%;
+    top: 22%;
+    left: 35%;
+}
+.red img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100%;
+    top: 24%;
+    left: 24%;
+}
+.fbs{
+    position: fixed;
+    top: 11%;
+    right: -160px;
+    transition: 1s;
+}
+.fbs img{
+    width: 200px;
+}
+
+/* BD flag css end */
+
+
+/* hover section start*/
+
+.social-media ul li:hover{
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.social-media ul li:hover i{
+    color: black;
+    transition: 0.5s;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.green:hover{
+    transition: 0.5s;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+.red:hover img{
+    color: aqua;
+    transition: 0.9s;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.fbs:hover{
+    right: 0px;
+    cursor: pointer;
+}
+/* hover section end*/
+
